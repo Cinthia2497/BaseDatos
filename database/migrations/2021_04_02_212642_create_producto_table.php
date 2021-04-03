@@ -15,10 +15,10 @@ class CreateProductoTable extends Migration
     {
         Schema::create('producto', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('codigo',20);
-            $table->string('nombre',50);
+            $table->string('cod_producto',30);
+            $table->string('nombre',100);
             $table->string('cantidad',50);
-            $table->string('precio',20);
+            $table->string('precio',50);
             $table->softDeletes(); 
             $table->timestamps();
             

@@ -15,9 +15,9 @@ class CreateUsuarioTable extends Migration
     {
         Schema::create('usuario', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nombre',50);
-            $table->string('direccion',50);
-            $table->string('telefono',20);
+            $table->string('nombre_usuario',40);
+            $table->string('direccion',100);
+            $table->double('telefono',50);
             $table->softDeletes(); 
             $table->timestamps();
         });
